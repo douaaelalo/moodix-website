@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Year in Pixels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .year-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 30px); /* 12 Spalten (Monate) */
+            grid-template-rows: repeat(31, 30px);  /* 31 Reihen (Tage des Monats) */
+            gap: 2px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pixel {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pixel.green {
+            background-color: green;
+        }
+        .pixel.yellow {
+            background-color: yellow;
+        }
+        .pixel.red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Year in Pixels</h1>
+    <p>Jeden Tag mit einer Farbe bewerten!</p>
+
+    <div class="year-grid">
+        <!-- Pixel für jeden Tag im Jahr -->
+        <div class="pixel green"></div> <!-- Beispiel für ein grünes Pixel -->
+        <div class="pixel yellow"></div> <!-- Beispiel für ein gelbes Pixel -->
+        <div class="pixel red"></div> <!-- Beispiel für ein rotes Pixel -->
+        <!-- Wiederhole das für alle 365 Tage des Jahres -->
+    </div>
+
+    <script>
+        // Optional: Du kannst hier JavaScript hinzufügen, um das Verhalten zu ändern
+        // und es den Benutzern zu ermöglichen, jeden Tag mit einer bestimmten Farbe zu markieren.
+    </script>
+</body>
+</html>
